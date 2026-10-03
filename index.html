@@ -17,7 +17,8 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f4f6f9">
-<link rel="preload" as="image" href="assets/road.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/road.webp" media="(min-width: 861px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/road-m.webp" media="(max-width: 860px)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -76,8 +77,9 @@
   @media (max-width: 860px) { .bar.is-scrolled { background: rgb(244 246 249 / .96); } }
 
   /* ---- hero: одна дорога, оффер на небе, строка маршрута ------------------------ */
+  .hero__back picture { display: contents; }
   .hero__back img { left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;
-    transform: scale(calc(1 + var(--v-p, 0) * .06)); transform-origin: 72% 78%; }
+    transform: scale(calc(1 + var(--v-p, 0) * .06)); transform-origin: 72% 62%; }
   .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
     background: radial-gradient(115% 90% at 0% 0%, rgb(244 246 249 / .94) 0%, rgb(244 246 249 / .66) 42%, transparent 72%); }
   .hero__copy { top: clamp(5rem, 13vh, 8.5rem); max-width: min(46rem, 86vw); }
@@ -91,8 +93,9 @@
     padding: var(--v-4) var(--v-5); border-radius: var(--v-radius); background: rgb(255 255 255 / .82); box-shadow: var(--v-e1); }
   .hero__note .v-nums { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); letter-spacing: -.01em; }
   .hero__note .hero__int { color: var(--v-ink); font-size: var(--v-t-sm); }
+  @media (min-width: 861px) and (max-aspect-ratio: 3/2) { .hero__back img { object-position: 66% 50%; } }
   @media (max-width: 860px) {
-    .hero__back img { object-position: 88% 50%; }
+    .hero__back img { object-position: 46% 50%; transform: translateY(-3%) scale(calc(1.12 + var(--v-p, 0) * .06)); transform-origin: 46% 66%; }
     .hero__scrim { background: linear-gradient(to bottom, rgb(244 246 249 / .96) 0%, rgb(244 246 249 / .84) 44%, transparent 72%); }
     .hero__note { display: none; }
     .hero__copy { top: calc(clamp(4.5rem, 11vh, 6.5rem) + env(safe-area-inset-top, 0px)); left: var(--v-gutter); right: var(--v-gutter); max-width: none; }
@@ -238,7 +241,7 @@
     background: var(--v-canvas); color: var(--v-ink); box-shadow: inset 0 0 0 2px var(--v-ink); }
   .route__end--b { right: 0; background: var(--v-accent); color: var(--v-accent-ink); box-shadow: inset 0 0 0 2px var(--v-accent); }
   .route__track { position: absolute; left: 3.6rem; right: 3.6rem; top: 0; height: 100%; }
-  .mini { position: absolute; top: .2rem; left: calc(var(--v-p, 0) * (100% - 4.2rem)); width: 4.2rem; height: 2.4rem; }
+  .mini { position: absolute; top: .2rem; left: calc(var(--v-p, 0) * (100% - 4.2rem)); width: 4.2rem; height: 2.4rem; transform: scaleX(-1); /* кабина впереди, едет от А к Б */ }
   .mini__cab { position: absolute; left: 0; bottom: .5rem; width: 1.05rem; height: .95rem; border-radius: .4rem .1rem 0 .1rem; background: var(--v-surface); box-shadow: inset 0 0 0 2px var(--v-ink); }
   .mini__deck { position: absolute; left: 1.05rem; right: 0; bottom: .5rem; height: .26rem; background: var(--v-ink); }
   .mini__car { position: absolute; left: 1.4rem; right: .15rem; bottom: .76rem; height: .8rem; border-radius: .3rem .35rem .12rem .12rem; background: var(--v-surface); box-shadow: inset 0 0 0 2px var(--v-ink); }
@@ -353,7 +356,10 @@
     <section id="top" data-v-act="pin" data-v-span="2.2" data-v-drift="#f4f6f9" aria-label="Эвакуатор: цена и время подачи до выезда">
       <div data-v-stage>
         <div class="v-layer hero__back">
-          <img src="assets/road.webp" alt="" width="1920" height="1080" fetchpriority="high">
+          <picture>
+            <source media="(max-width: 860px)" srcset="assets/road-m.webp" width="900" height="1200">
+            <img src="assets/road.webp" alt="" width="1920" height="1080" fetchpriority="high">
+          </picture>
         </div>
         <div class="hero__scrim" aria-hidden="true"></div>
 
