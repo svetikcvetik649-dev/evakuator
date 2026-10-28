@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Эвакуатор {{город}} · встала машина, позвоните</title>
-<meta name="description" content="Эвакуатор в {{город}}: позвоните, скажите, где машина. Цену и время подачи называем до выезда.">
+<title>Эвакуатор Минск · встала машина, позвоните</title>
+<meta name="description" content="Эвакуатор в Минск: позвоните, скажите, где машина. Цену и время подачи называем до выезда.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
-<meta property="og:site_name" content="{{компания}}">
-<meta property="og:title" content="Эвакуатор {{город}} · встала машина, позвоните">
+<meta property="og:site_name" content="Трасса-Эвакуатор">
+<meta property="og:title" content="Эвакуатор Минск · встала машина, позвоните">
 <meta property="og:description" content="Позвоните, скажите, где машина. Цену и время подачи называем до выезда.">
-<meta property="og:url" content="{{адрес сайта}}">
-<meta property="og:image" content="{{адрес сайта}}/assets/og.jpg">
+<meta property="og:url" content="https://svetikcvetik649-dev.github.io/evakuator">
+<meta property="og:image" content="https://svetikcvetik649-dev.github.io/evakuator/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -25,11 +25,11 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%274%27 y=%2718%27 width=%2724%27 height=%274%27 rx=%271%27 fill=%27%2314213d%27/%3E%3Crect x=%277%27 y=%2710%27 width=%2714%27 height=%277%27 rx=%272%27 fill=%27%23f4f6f9%27 stroke=%27%2314213d%27 stroke-width=%272%27/%3E%3Ccircle cx=%2710%27 cy=%2725%27 r=%273%27 fill=%27%231f4fd6%27/%3E%3Ccircle cx=%2722%27 cy=%2725%27 r=%273%27 fill=%27%231f4fd6%27/%3E%3C/svg%3E">
 <link rel="stylesheet" href="vibe.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"AutomotiveBusiness","name":"{{компания}}","description":"Эвакуация автомобилей: цена и время подачи называются по телефону до выезда.","url":"{{адрес сайта}}","image":"{{адрес сайта}}/assets/og.jpg","telephone":"{{телефон}}","openingHours":"{{часы}}","areaServed":"{{город}}","address":{"@type":"PostalAddress","streetAddress":"{{адрес}}","addressLocality":"{{город}}"},"priceRange":"от {{цена}} ₽"}
+{"@context":"https://schema.org","@type":"AutomotiveBusiness","name":"Трасса-Эвакуатор","description":"Эвакуация автомобилей: цена и время подачи называются по телефону до выезда.","url":"https://svetikcvetik649-dev.github.io/evakuator","image":"https://svetikcvetik649-dev.github.io/evakuator/assets/og.jpg","telephone":"+375291234567","openingHours":"круглосуточно","areaServed":"Минск","address":{"@type":"PostalAddress","streetAddress":"пр-т Независимости, 100","addressLocality":"Минск"},"priceRange":"от от 60 BYN ₽"}
 </script>
 <!--
-  ДЕМО. Слоты {{...}} заменяем данными заказчика: {{компания}}, {{город}}, {{телефон}} (в tel: без пробелов и скобок),
-  {{часы}}, {{время-подачи}}, {{зона-выезда}}, {{цена}}, {{адрес}}, {{юрлицо}}, {{ИНН}}, отзывы с Яндекс.Карт, {{адрес сайта}}.
+  ДЕМО. Слоты заменяем данными заказчика: Трасса-Эвакуатор, Минск, +375291234567 (в tel: без пробелов и скобок),
+  круглосуточно, от 20 минут, Минск, область и межгород, цены, пр-т Независимости, 100, {{юрлицо}}, {{ИНН}}, отзывы с Яндекс.Карт, https://svetikcvetik649-dev.github.io/evakuator.
   Цель для Директа: клик по любой ссылке с data-call (tel:). В Метрике - цель "клик по телефону".
   ПРОВЕРИТЬ У ЗАКАЗЧИКА: список техники (в блоке "Что эвакуируем" пункты 5 и 6 - только если делает), способ погрузки
   (платформа, лебёдка, ремни), ночной тариф, межгород, условия ответственности.
@@ -343,10 +343,10 @@
   <span data-v-progress></span>
 
   <header class="bar">
-    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>{{компания}}</a>
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>Трасса-Эвакуатор</a>
     <nav class="bar__right" aria-label="Быстрые ссылки">
-      <a class="bar__tel" href="tel:{{телефон}}" data-call>{{телефон}}</a>
-      <a class="v-btn" href="tel:{{телефон}}" data-call>Позвонить</a>
+      <a class="bar__tel" href="tel:+375291234567" data-call>+375 29 123-45-67</a>
+      <a class="v-btn" href="tel:+375291234567" data-call>Позвонить</a>
     </nav>
   </header>
 
@@ -365,17 +365,17 @@
 
         <div class="hero__note" data-v-cue="0 1 0 0" data-v-rise="0">
           <span class="v-label">Принимаем звонки</span>
-          <span class="v-nums">{{часы}}</span>
-          <span class="hero__int">Подача {{время-подачи}}</span>
+          <span class="v-nums">круглосуточно</span>
+          <span class="hero__int">Подача от 20 минут</span>
         </div>
 
         <div class="v-copy v-copy--top hero__copy" data-v-cue="0 1 0 0">
-          <span class="v-label hero__label">Эвакуатор · {{город}}</span>
+          <span class="v-label hero__label">Эвакуатор · Минск</span>
           <h1 class="v-display v-display--xl" data-v-kinetic="words">Встала машина? Позвоните</h1>
           <p class="v-lede">Назовём цену и время подачи до выезда. Ответим сразу.</p>
           <div class="hero__cta">
-            <a class="v-btn" href="tel:{{телефон}}" data-call>Позвонить</a>
-            <a class="hero__tel" href="tel:{{телефон}}" data-call>номер <b>{{телефон}}</b></a>
+            <a class="v-btn" href="tel:+375291234567" data-call>Позвонить</a>
+            <a class="hero__tel" href="tel:+375291234567" data-call>номер <b>+375 29 123-45-67</b></a>
           </div>
         </div>
 
@@ -394,7 +394,7 @@
     <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#eceff4" id="gruzy" aria-label="Что эвакуируем">
       <div class="v-wrap">
         <div class="poka__head" data-v-in data-v-stagger="70">
-          <h2 class="v-display v-display--lg">Что эвакуируем в {{город}}</h2>
+          <h2 class="v-display v-display--lg">Что эвакуируем в Минск</h2>
           <p class="v-body v-soft">Не завелась, попала в ДТП, съехала с дороги. Найдите свой случай и скажите его в звонке: от этого зависит, как будем грузить.</p>
         </div>
         <!-- ПРОВЕРИТЬ У ЗАКАЗЧИКА: оставить только то, что он реально возит. Чётное число строк держит две колонки ровными. -->
@@ -454,7 +454,7 @@
               <span class="tier__class"><i aria-hidden="true"></i>Шаг 1 · Подача</span>
               <h3>Эвакуатор встаёт у машины</h3>
               <p class="tier__note">Приезжаем к названному времени и опускаем платформу. <b>Время подачи вы знаете из звонка.</b></p>
-              <div class="tier__price"><span><b class="v-nums">от {{цена}} ₽</b><small>подача по городу</small></span></div>
+              <div class="tier__price"><span><b class="v-nums">от 60 BYN</b><small>подача по городу</small></span></div>
             </div>
             <div class="tier" data-v-cue="0.25 0.5 0.03 0.03">
               <span class="tier__class"><i aria-hidden="true"></i>Шаг 2 · Погрузка</span>
@@ -466,7 +466,7 @@
               <span class="tier__class"><i aria-hidden="true"></i>Шаг 3 · Платформа поднимается</span>
               <h3>Машина встаёт на борт</h3>
               <p class="tier__note">Платформа выравнивается, машина стоит ровно. Дальше - дорога до адреса, который вы назвали.</p>
-              <div class="tier__price"><span><b class="v-nums">от {{цена}} ₽/км</b><small>за километр пути</small></span></div>
+              <div class="tier__price"><span><b class="v-nums">от 1,5 BYN/км</b><small>за километр пути</small></span></div>
             </div>
             <div class="tier" data-v-cue="0.75 1 0.03 0">
               <span class="tier__class"><i aria-hidden="true"></i>Шаг 4 · Крепление</span>
@@ -477,7 +477,7 @@
           </div>
 
           <div class="kz__after" data-v-cue="0.74 1 0.06 0">
-            <a class="v-btn" href="tel:{{телефон}}" data-call>Позвонить</a>
+            <a class="v-btn" href="tel:+375291234567" data-call>Позвонить</a>
             <span class="kz__hint">Не знаете, что с машиной - просто позвоните, разберёмся по описанию</span>
           </div>
         </div>
@@ -489,13 +489,13 @@
       <div class="v-wrap prices">
         <div class="v-stack" data-v-in data-v-stagger="60">
           <h2 class="v-display v-display--lg">Что в цене, а что отдельно</h2>
-          <p class="v-body v-soft">Сумму называем по телефону, до выезда. Ничего не появляется в ней задним числом. <span class="prices__seg">Ездим: {{зона-выезда}}.</span></p>
+          <p class="v-body v-soft">Сумму называем по телефону, до выезда. Ничего не появляется в ней задним числом. <span class="prices__seg">Ездим: Минск, область и межгород.</span></p>
           <ul class="plist">
-            <li><span class="name">Подача по городу</span><span class="note">Эвакуатор у машины к названному времени. Ожидание сверх оговорённого - по ставке, о которой вы знаете заранее</span><span class="price v-nums">{{цена}} ₽</span></li>
-            <li><span class="name">Километры</span><span class="note">Считаем путь с машиной до адреса, который вы назвали. Сумма называется до выезда и в дороге не меняется</span><span class="price v-nums">от {{цена}} ₽/км<small>сумма за маршрут - до выезда</small></span></li>
+            <li><span class="name">Подача по городу</span><span class="note">Эвакуатор у машины к названному времени. Ожидание сверх оговорённого - по ставке, о которой вы знаете заранее</span><span class="price v-nums">60 BYN</span></li>
+            <li><span class="name">Километры</span><span class="note">Считаем путь с машиной до адреса, который вы назвали. Сумма называется до выезда и в дороге не меняется</span><span class="price v-nums">от 1,5 BYN/км<small>сумма за маршрут - до выезда</small></span></li>
             <li><span class="name">Межгород</span><span class="note">Фиксированная сумма за рейс: считаем по километрам до выезда</span><span class="price v-nums">по звонку<small>цена за рейс - до выезда</small></span></li>
             <!-- ПРОВЕРИТЬ У ЗАКАЗЧИКА: есть ли ночной тариф. Нет - удалить строку. -->
-            <li data-slot-optional><span class="name">Ночь и выходные</span><span class="note">Если вызов ночью или в выходной, тариф называем в первом же ответе, а не после погрузки</span><span class="price v-nums">{{цена}} ₽</span></li>
+            <li data-slot-optional><span class="name">Ночь и выходные</span><span class="note">Если вызов ночью или в выходной, тариф называем в первом же ответе, а не после погрузки</span><span class="price v-nums">от 80 BYN</span></li>
             <li><span class="name">Сложная погрузка</span><span class="note">Заблокированные колёса, кювет, яма, тесный двор. Цену называем после вашего описания, до выезда</span><span class="price v-nums">по описанию<small>цена до выезда</small></span></li>
           </ul>
           <p class="prices__incl"><b>Что называем по телефону:</b> куда едем, какая машина, как будем грузить, сколько стоит и когда приедем. Итог - эта же сумма.</p>
@@ -521,7 +521,7 @@
         </div>
         <div class="v-copy v-copy--top road__copy" data-v-cue="0.34 0.67 0.04 0.04">
           <span class="v-label">Подача</span>
-          <h2 class="v-display v-display--lg">К названному времени: {{время-подачи}}</h2>
+          <h2 class="v-display v-display--lg">К названному времени: от 20 минут</h2>
           <p class="v-lede">Если что-то идёт не так, предупреждаем заранее, а не «уже едем». Вы знаете, сколько ждать, ещё до того, как положили трубку.</p>
         </div>
         <div class="v-copy v-copy--top road__copy" data-v-cue="0.67 1 0.04 0">
@@ -559,36 +559,6 @@
       </div>
     </section>
 
-    <!-- 7 · ДОВЕРИЕ: отзывы с Яндекс.Карт (только настоящие, слоты; нет отзывов - удалить секцию целиком) -->
-    <section class="v-section" data-v-act="flow" data-v-drift="#eceff4" id="otzyvy" data-slot-optional aria-label="Отзывы с Яндекс.Карт">
-      <div class="v-wrap reviews">
-        <div class="reviews__head" data-v-in data-v-stagger="60">
-          <h2 class="v-display v-display--md">Что пишут на Яндекс.Картах</h2>
-          <div class="reviews__rating">
-            <span class="reviews__num v-nums">{{рейтинг}}</span>
-            <span class="reviews__stars" style="--r: {{рейтинг}}" role="img" aria-label="рейтинг {{рейтинг}} из 5"></span>
-            <span class="v-soft">{{отзывов}} отзывов</span>
-            <a href="{{ссылка-карты}}" target="_blank" rel="noopener">Читать все отзывы</a>
-          </div>
-        </div>
-        <ul class="reviews__list" data-v-in data-v-stagger="90">
-          <li class="reviews__item reviews__item--big">
-            <p class="reviews__text">«{{отзыв 1}}»</p>
-            <p class="reviews__meta"><b>{{имя 1}}</b> · {{дата 1}} · <span class="reviews__stars reviews__stars--sm" style="--r: {{оценка 1}}" role="img" aria-label="оценка {{оценка 1}} из 5"></span></p>
-          </li>
-          <li class="reviews__item">
-            <p class="reviews__text">«{{отзыв 2}}»</p>
-            <p class="reviews__meta"><b>{{имя 2}}</b> · {{дата 2}} · <span class="reviews__stars reviews__stars--sm" style="--r: {{оценка 2}}" role="img" aria-label="оценка {{оценка 2}} из 5"></span></p>
-          </li>
-          <li class="reviews__item">
-            <p class="reviews__text">«{{отзыв 3}}»</p>
-            <p class="reviews__meta"><b>{{имя 3}}</b> · {{дата 3}} · <span class="reviews__stars reviews__stars--sm" style="--r: {{оценка 3}}" role="img" aria-label="оценка {{оценка 3}} из 5"></span></p>
-          </li>
-        </ul>
-        <p class="reviews__fact" data-v-in data-v-in-self>Отзывы скопированы с карточки на Яндекс.Картах без правок.</p>
-      </div>
-    </section>
-
     <!-- 8 · ДЕЙСТВИЕ: один звонок -->
     <section data-v-act="flow" data-v-drift="#f4f6f9" id="zvonok" aria-label="Позвонить">
       <div class="close" data-v-spotlight>
@@ -597,21 +567,20 @@
             <h2 class="v-display v-display--lg">Позвоните: назовём цену и время подачи</h2>
             <p class="v-lede">Скажите, где машина и что с ней. Ответим сразу: как грузим, сколько стоит, когда будем.</p>
             <div class="close__cta">
-              <a class="v-btn" href="tel:{{телефон}}" data-call data-v-magnet="0.22" data-v-rise="0">Позвонить</a>
-              <a class="close__tel" href="tel:{{телефон}}" data-call>{{телефон}}</a>
+              <a class="v-btn" href="tel:+375291234567" data-call data-v-magnet="0.22" data-v-rise="0">Позвонить</a>
+              <a class="close__tel" href="tel:+375291234567" data-call>+375 29 123-45-67</a>
             </div>
             <p class="close__hint">Не нужно знать марку и модель назубок: опишите, что случилось и где вы стоите. Остальное спросим сами.</p>
           </div>
           <div class="close__meta" data-v-in data-v-stagger="60">
-            <span><b>Принимаем звонки</b>{{часы}}</span>
-            <span><b>Подача</b>{{время-подачи}}</span>
-            <span><b>Ездим</b>{{зона-выезда}}</span>
-            <span data-slot-optional><b>Адрес</b>{{адрес}}, {{город}}</span>
+            <span><b>Принимаем звонки</b>круглосуточно</span>
+            <span><b>Подача</b>от 20 минут</span>
+            <span><b>Ездим</b>Минск, область и межгород</span>
+            <span data-slot-optional><b>Адрес</b>пр-т Независимости, 100, Минск</span>
           </div>
         </div>
         <footer class="foot">
-          <span>{{компания}} · {{город}}</span>
-          <span data-slot-optional>{{юрлицо}} · ИНН {{ИНН}}</span>
+          <span>Трасса-Эвакуатор · Минск</span>
           <span class="foot__more">Эвакуация автомобилей по городу и межгород</span>
         </footer>
       </div>
